@@ -6,4 +6,4 @@ Route::get('/admin/login', 'Auth\BackendLoginController@showLoginForm')->name('b
 Route::post('/admin/login', 'Auth\BackendLoginController@login')->name('backend.login.confirm');
 Route::post('/admin/logout', 'Auth\BackendLoginController@logout')->name('backend.logout');
 
-Auth::routes();
+// Auth::routes();
