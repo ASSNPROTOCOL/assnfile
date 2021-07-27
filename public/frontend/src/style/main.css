@@ -1,10 +1,19 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 .darkBLack {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#1c2224), color-stop(#000), to(#000));
+  background-image: -o-linear-gradient(top, #1c2224, #000, #000);
   background-image: linear-gradient(to bottom, #1c2224, #000, #000);
 }
 
 .lightBLack {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(#1c2224), to(#1c2224));
+  background-image: -o-linear-gradient(top, #000, #1c2224, #1c2224);
   background-image: linear-gradient(to bottom, #000, #1c2224, #1c2224);
 }
 
@@ -17,12 +26,14 @@
   color: #f2f2f2;
   background-color: #ff00ccff;
   padding: 5px;
+  background: -o-linear-gradient(135deg, #ff0066 0%, #0088cc 100%);
   background: linear-gradient(-45deg, #ff0066 0%, #0088cc 100%);
   margin: 5px 0;
   margin-right: 10px;
 }
 
 .pBarBtn a:hover {
+  background: -o-linear-gradient(45deg, #ff0066 0%, #0088cc 100%);
   background: linear-gradient(45deg, #ff0066 0%, #0088cc 100%);
 }
 
@@ -173,6 +184,7 @@ main {
 * a {
   cursor: pointer;
   -webkit-transition: .3s;
+  -o-transition: .3s;
   transition: .3s;
   text-decoration: none;
   transition: .3s;
@@ -208,11 +220,13 @@ main {
 
 .darkBLack {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#1c2224), color-stop(#000), to(#000));
+  background-image: -o-linear-gradient(top, #1c2224, #000, #000);
   background-image: linear-gradient(to bottom, #1c2224, #000, #000);
 }
 
 .lightBLack {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(#1c2224), to(#1c2224));
+  background-image: -o-linear-gradient(top, #000, #1c2224, #1c2224);
   background-image: linear-gradient(to bottom, #000, #1c2224, #1c2224);
 }
 
@@ -225,12 +239,14 @@ main {
   color: #f2f2f2;
   background-color: #ff00ccff;
   padding: 5px;
+  background: -o-linear-gradient(135deg, #ff0066 0%, #0088cc 100%);
   background: linear-gradient(-45deg, #ff0066 0%, #0088cc 100%);
   margin: 5px 0;
   margin-right: 10px;
 }
 
 .pBarBtn a:hover {
+  background: -o-linear-gradient(45deg, #ff0066 0%, #0088cc 100%);
   background: linear-gradient(45deg, #ff0066 0%, #0088cc 100%);
 }
 
@@ -253,6 +269,7 @@ main {
   right: 0;
   z-index: 9997;
   -webkit-transition: .3s;
+  -o-transition: .3s;
   transition: .3s;
 }
 
@@ -285,6 +302,7 @@ main {
   height: 125px;
   overflow: hidden;
   -webkit-transition: .3s;
+  -o-transition: .3s;
   transition: .3s;
 }
 
@@ -295,15 +313,23 @@ main {
 }
 
 .header .headerContainer .logoBox .headerLogo {
-  display: block;
+  display: inline;
   -webkit-transition: 0.2s !important;
+  -o-transition: 0.2s !important;
   transition: 0.2s !important;
+}
+
+@media screen and (max-width: 767px) {
+  .header .headerContainer .logoBox .headerLogo {
+    display: block;
+  }
 }
 
 .header .headerContainer .logoBox .headerLogo img {
   height: 100%;
   width: auto;
   -webkit-transition: .3s;
+  -o-transition: .3s;
   transition: .3s;
 }
 
@@ -322,13 +348,16 @@ main {
   color: #f2f2f2;
   background-color: #ff00ccff;
   padding: 5px;
+  background: -o-linear-gradient(135deg, #ff0066 0%, #0088cc 100%);
   background: linear-gradient(-45deg, #ff0066 0%, #0088cc 100%);
   display: none;
   -webkit-transition: 0.2s !important;
+  -o-transition: 0.2s !important;
   transition: 0.2s !important;
 }
 
 .header .headerContainer .logoBox .logoBtn:hover {
+  background: -o-linear-gradient(45deg, #ff0066 0%, #0088cc 100%);
   background: linear-gradient(45deg, #ff0066 0%, #0088cc 100%);
 }
 
@@ -349,6 +378,7 @@ main {
   margin-top: 7.5px;
   visibility: hidden;
   -webkit-transition: .3s;
+  -o-transition: .3s;
   transition: .3s;
   opacity: 0;
 }
@@ -365,13 +395,13 @@ main {
   font-size: 50px;
   line-height: 1;
   text-align: center;
-  position: -webkit-sticky;
   position: sticky;
   z-index: 9999;
   opacity: .8;
   cursor: pointer;
   padding-top: 2rem;
   -webkit-transition: 0.2s !important;
+  -o-transition: 0.2s !important;
   transition: 0.2s !important;
 }
 
@@ -394,6 +424,7 @@ main {
 .header .headerContainer .headerRight .menuBtn span {
   display: block;
   -webkit-transition: .3s;
+  -o-transition: .3s;
   transition: .3s;
 }
 
@@ -422,6 +453,7 @@ main {
           justify-content: center;
   overflow: hidden;
   -webkit-transition: .3s;
+  -o-transition: .3s;
   transition: .3s;
   opacity: 0;
 }
@@ -438,6 +470,7 @@ main {
       -ms-flex-align: start;
           align-items: start;
   -webkit-transition: .1s;
+  -o-transition: .1s;
   transition: .1s;
   opacity: 0;
   max-height: 100%;
@@ -518,18 +551,21 @@ main {
 
 .header.active .headerContainer .headerRight .menuBtn .menuOpen {
   -webkit-transform: rotate(180degt);
-          transform: rotate(180degt);
+          -ms-transform: rotate(180degt);
+      transform: rotate(180degt);
   opacity: 0;
 }
 
 .header.active .headerContainer .headerRight .menuBtn .menuClose {
   -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
   opacity: 1;
 }
 
 .header.scrolled {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#1c2224));
+  background-image: -o-linear-gradient(top, #000, #1c2224);
   background-image: linear-gradient(to bottom, #000, #1c2224);
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
@@ -543,13 +579,15 @@ main {
 @media screen and (max-width: 767px) {
   .header.scrolled .headerContainer .logoBox .headerLogo {
     -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+            -ms-transform: translateY(-100%);
+        transform: translateY(-100%);
   }
 }
 
 .header.scrolled .headerContainer .logoBox .logoBtn {
   -webkit-transform: translateY(-135%);
-          transform: translateY(-135%);
+          -ms-transform: translateY(-135%);
+      transform: translateY(-135%);
 }
 
 .header.scrolled .headerContainer .pBarBtn {
@@ -569,6 +607,7 @@ main {
 
 .footer {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#000), to(#1c2224));
+  background-image: -o-linear-gradient(top, #000, #1c2224);
   background-image: linear-gradient(to bottom, #000, #1c2224);
   border-top: 1px solid #1c2224;
   padding: 25px 0;
@@ -585,7 +624,8 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-column-gap: 15px;
-          column-gap: 15px;
+          -moz-column-gap: 15px;
+       column-gap: 15px;
 }
 
 @media screen and (max-width: 767px) {
@@ -709,7 +749,8 @@ main {
       -ms-flex-align: center;
           align-items: center;
   -webkit-column-gap: 25px;
-          column-gap: 25px;
+          -moz-column-gap: 25px;
+       column-gap: 25px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -794,7 +835,8 @@ main {
   top: 50%;
   left: 40%;
   -webkit-transform: translate(-60%, -50%);
-          transform: translate(-60%, -50%);
+          -ms-transform: translate(-60%, -50%);
+      transform: translate(-60%, -50%);
   width: 400px;
   height: 400px;
 }
@@ -820,7 +862,6 @@ main {
 
 .hero .container figure .adjctrGif {
   text-align: right;
-  position: -webkit-sticky;
   position: sticky;
   z-index: 1;
 }
@@ -868,7 +909,6 @@ main {
 }
 
 .roadmap * {
-  position: -webkit-sticky;
   position: sticky;
   z-index: 1;
 }
@@ -929,7 +969,8 @@ main {
   left: 50%;
   bottom: 0;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
   height: 1px;
   width: 150px;
   background-color: #00aad4;
@@ -947,7 +988,8 @@ main {
   left: 50%;
   bottom: -3px;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
   height: 7px;
   width: 50px;
   background-color: #ff0066;
@@ -1001,6 +1043,7 @@ main {
   content: '';
   z-index: 1;
   background: -webkit-gradient(linear, left bottom, left top, from(#ff9100), color-stop(20%, #00aad4), color-stop(80%, #00aad4), to(#ff9100));
+  background: -o-linear-gradient(bottom, #ff9100 0%, #00aad4 20%, #00aad4 80%, #ff9100 100%);
   background: linear-gradient(0deg, #ff9100 0%, #00aad4 20%, #00aad4 80%, #ff9100 100%);
 }
 
@@ -1040,7 +1083,8 @@ main {
   position: absolute;
   top: 0;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
   font-size: 20px;
   font-family: inconsolata-regular;
   border-bottom: 1px solid #ff0066;
@@ -1134,7 +1178,6 @@ main {
 }
 
 .roadmap .container .rmWrapper .rmItem .itemText .itemImg .theImg * {
-  position: -webkit-sticky;
   position: sticky;
   z-index: 2;
 }
@@ -1188,7 +1231,6 @@ main {
 }
 
 .roadmap .container .rmWrapper .rmItem .itemText .itemImg article * {
-  position: -webkit-sticky;
   position: sticky;
   z-index: 2;
 }
@@ -1227,7 +1269,6 @@ main {
 }
 
 .roadmap .container .rmWrapper .rmItem .itemText .itemList * {
-  position: -webkit-sticky;
   position: sticky;
   z-index: 2;
 }
@@ -1308,7 +1349,8 @@ main {
 .roadmap .container .rmWrapper .rmItem:nth-child(odd) .itemNumber {
   left: 0;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
 }
 
 .roadmap .container .rmWrapper .rmItem:nth-child(odd) .itemHead {
@@ -1330,6 +1372,7 @@ main {
 .roadmap .container .rmWrapper .rmItem:nth-child(odd) .itemHead::before {
   left: -40px;
   background: -webkit-gradient(linear, left bottom, left top, from(#ff9100), to(#ff0066));
+  background: -o-linear-gradient(bottom, #ff9100 0%, #ff0066 100%);
   background: linear-gradient(0deg, #ff9100 0%, #ff0066 100%);
 }
 
@@ -1345,6 +1388,7 @@ main {
 
 .roadmap .container .rmWrapper .rmItem:nth-child(odd) .itemText {
   background-image: -webkit-gradient(linear, left top, right top, from(#ff0066), to(#00aad4));
+  background-image: -o-linear-gradient(left, #ff0066, #00aad4);
   background-image: linear-gradient(to right, #ff0066, #00aad4);
 }
 
@@ -1386,7 +1430,8 @@ main {
 .roadmap .container .rmWrapper .rmItem:nth-child(even) .itemNumber {
   right: 0;
   -webkit-transform: translate(50%, -50%);
-          transform: translate(50%, -50%);
+          -ms-transform: translate(50%, -50%);
+      transform: translate(50%, -50%);
 }
 
 @media screen and (max-width: 991px) {
@@ -1394,7 +1439,8 @@ main {
     right: auto;
     left: 0;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
   }
 }
 
@@ -1418,6 +1464,7 @@ main {
 .roadmap .container .rmWrapper .rmItem:nth-child(even) .itemHead::before {
   right: -40px;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff9100), to(#ff0066));
+  background: -o-linear-gradient(top, #ff9100 0%, #ff0066 100%);
   background: linear-gradient(180deg, #ff9100 0%, #ff0066 100%);
 }
 
@@ -1426,6 +1473,7 @@ main {
     right: auto;
     left: -40px;
     background: -webkit-gradient(linear, left bottom, left top, from(#ff9100), to(#ff0066));
+    background: -o-linear-gradient(bottom, #ff9100 0%, #ff0066 100%);
     background: linear-gradient(0deg, #ff9100 0%, #ff0066 100%);
   }
 }
@@ -1449,12 +1497,14 @@ main {
 
 .roadmap .container .rmWrapper .rmItem:nth-child(even) .itemText {
   background-image: -webkit-gradient(linear, left top, right top, from(#00aad4), to(#ff0066));
+  background-image: -o-linear-gradient(left, #00aad4, #ff0066);
   background-image: linear-gradient(to right, #00aad4, #ff0066);
 }
 
 @media screen and (max-width: 991px) {
   .roadmap .container .rmWrapper .rmItem:nth-child(even) .itemText {
     background-image: -webkit-gradient(linear, left top, right top, from(#ff0066), to(#00aad4));
+    background-image: -o-linear-gradient(left, #ff0066, #00aad4);
     background-image: linear-gradient(to right, #ff0066, #00aad4);
   }
 }
@@ -1520,7 +1570,8 @@ main {
   left: 50%;
   bottom: 0;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
   height: 1px;
   width: 150px;
   background-color: #ff0066;
@@ -1538,7 +1589,8 @@ main {
   left: 50%;
   bottom: -3px;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
   height: 7px;
   width: 50px;
   background-color: #00aad4;
@@ -1564,7 +1616,8 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-column-gap: 40px;
-          column-gap: 40px;
+          -moz-column-gap: 40px;
+       column-gap: 40px;
 }
 
 @media screen and (max-width: 991px) {
@@ -1610,7 +1663,8 @@ main {
   width: 2px;
   height: calc( 100% + 60px);
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
   content: '';
   background-color: rgba(255, 255, 255, 0.25);
 }
@@ -1661,7 +1715,8 @@ main {
   height: 2px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
   background-color: rgba(255, 255, 255, 0.25);
 }
 
@@ -1672,6 +1727,7 @@ main {
   height: 100%;
   background-color: #00aad4;
   -webkit-transition: .5s;
+  -o-transition: .5s;
   transition: .5s;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -1684,7 +1740,8 @@ main {
   top: 0;
   right: 0;
   -webkit-transform: translate(100%, -50%);
-          transform: translate(100%, -50%);
+          -ms-transform: translate(100%, -50%);
+      transform: translate(100%, -50%);
   padding-left: 15px;
   font-size: 25px;
   color: #00aad4;
@@ -1746,6 +1803,7 @@ main {
   display: block;
   height: 20px;
   width: 95%;
+  background: -o-repeating-linear-gradient(45deg, transparent, transparent 4px, #00aad4 4px, #00aad4 8px);
   background: repeating-linear-gradient(45deg, transparent, transparent 4px, #00aad4 4px, #00aad4 8px);
   background-size: 200% 200%;
   -webkit-animation: progressbar 1s infinite linear;
@@ -1787,7 +1845,8 @@ main {
   left: 50%;
   bottom: 0;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
   height: 1px;
   width: 150px;
   background-color: #00aad4;
@@ -1805,7 +1864,8 @@ main {
   left: 50%;
   bottom: -3px;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
   height: 7px;
   width: 50px;
   background-color: #ff0066;
@@ -1829,7 +1889,8 @@ main {
           align-items: center;
   padding-bottom: 50px;
   -webkit-column-gap: 35px;
-          column-gap: 35px;
+          -moz-column-gap: 35px;
+       column-gap: 35px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1875,7 +1936,6 @@ main {
 }
 
 .nftmarket .container .nmItem article {
-  position: -webkit-sticky;
   position: sticky;
   z-index: 1;
   width: 60%;
@@ -1941,7 +2001,8 @@ main {
   left: 50%;
   bottom: 0;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
   height: 1px;
   width: 150px;
   background-color: #ff0066;
@@ -1959,7 +2020,8 @@ main {
   left: 50%;
   bottom: -3px;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
   height: 7px;
   width: 50px;
   background-color: #00aad4;
@@ -2030,7 +2092,6 @@ main {
 }
 
 .carlottery .container {
-  position: -webkit-sticky;
   position: sticky;
   z-index: 2;
 }
@@ -2068,4 +2129,3 @@ main {
   -webkit-animation: move-background 70s linear infinite;
   animation: move-background 70s linear infinite;
 }
-/*# sourceMappingURL=main.css.map */

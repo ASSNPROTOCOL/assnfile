@@ -28,8 +28,11 @@
                 height: 90px
 
             .headerLogo
-                display: block
+                display: inline
                 transition: .2s!important
+
+                @media screen and (max-width: 767px)
+                    display: block
                 
                 img
                     height: 100%
